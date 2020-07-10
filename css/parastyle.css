@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Cardo&display=swap');
+
+
+body, html{
+  height: 100%;
+  margin: 0;
+  font-size: 16px;
+  font-family:'Cardo', serif;
+  font-weight: 400;
+  line-height: 1.8em;
+  color: #666;
+}
+
+.pimg1, .pimg2, .pimg3{
+  position:relative;
+  opacity:0.70;
+  background-position:center;
+  background-size:cover;
+  background-repeat:no-repeat;
+  background-attachment:fixed;
+}
+
+.pimg1{
+  background-image:url('../img/picture3.jpg');
+  min-height:100%;
+}
+
+.pimg2{
+  background-image:url('../img/picture2.jpg');
+  min-height:400px;
+}
+
+.pimg3{
+  background-image:url('../img/picture5.jpg');
+  min-height:400px;
+}
+
+.section{
+  text-align:center;
+  padding:50px 80px;
+  font-family:'Cardo', serif;
+
+}
+
+.section-light{
+  background-color:#f4f4f4;
+  color: #454545;
+  line-height:1.9em;
+  font-size:17px;
+  font-weight: bold;
+}
+
+
+.section-dark{
+  background-color:#282e34;
+  color:#ddd;
+  line-height:1.9em;
+  font-size:17px;
+  
+}
+
+.ptext{
+  position:absolute;
+  top:50%;
+  width:100%;
+  text-align:center;
+  color:#000;
+  font-size:25px;
+  letter-spacing:8px;
+  text-transform:uppercase;
+  font-family:'Cardo', sans-serif;
+}
+
+.ptext .border{
+  background-color:#111;
+  color:#fff;
+  padding:20px;
+}
+
+
+
+@media(max-width:568px){
+  .pimg1, .pimg2, .pimg3{
+    background-attachment:scroll;
+  }
+  .ptext .border{
+    line-height: 1.8em;
+}
+
+.ptext{
+  font-size:15px;
+  letter-spacing:5px;
+}
+
+}
